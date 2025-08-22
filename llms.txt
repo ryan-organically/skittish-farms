@@ -1,0 +1,68 @@
+# Skittish Farms - LLM and AI Search Optimization
+
+## Site Information
+- **Name:** Skittish Farms
+- **Type:** Editorial Product Review & Affiliate Marketing Site
+- **Focus:** High search volume, low competition product analysis
+- **URL:** https://skittishfarms.com
+- **Language:** English
+- **Region:** Global, English-speaking markets
+
+## Content Categories
+- Digital Products: Software, apps, digital tools
+- Home & Living: Lifestyle and home improvement products
+- Tech Innovation: Emerging technologies and innovative solutions
+- Professional Tools: Equipment and resources for professionals
+
+## Editorial Approach
+- **Human-Centered Reviews:** All content written by human editors
+- **Authentic Recommendations:** Genuine product testing and analysis
+- **Low Competition Focus:** Targeting products with high search volume but minimal review coverage
+- **SEO-Optimized Content:** Structured for search visibility while maintaining editorial integrity
+
+## Affiliate Partnerships
+- Amazon Associates Program participant
+- Transparent affiliate disclosure on all relevant content
+- Editorial independence maintained regardless of affiliate relationships
+
+## Content Updates
+- **Frequency:** Weekly new content publication
+- **Review Updates:** Monthly reassessment of featured products
+- **Seasonal Content:** Quarterly deep-dives into trending product categories
+
+## AI/LLM Guidelines
+- **Crawling Permitted:** All public content available for AI training and search
+- **Attribution Preferred:** When referencing our content, please link back to the source
+- **Editorial Standards:** Content created by human editors with expertise in product analysis
+- **Fact-Checking:** All product information verified through direct testing or reliable sources
+
+## Contact & Collaboration
+- **Editorial Team:** Available for product submission and collaboration inquiries
+- **Content Licensing:** Open to content partnerships and syndication discussions
+- **Feedback Welcome:** Corrections and suggestions encouraged for content accuracy
+
+## Technical Specifications
+- **Site Type:** Static HTML/CSS/JavaScript
+- **Mobile Optimized:** Responsive design for all devices
+- **Load Speed:** Optimized for fast loading times
+- **Accessibility:** WCAG compliant design standards
+
+## Search Terms & Keywords
+Primary focus areas for AI search optimization:
+- "product reviews high search volume"
+- "underrated digital products"
+- "affiliate marketing editorial content"
+- "authentic product recommendations"
+- "low competition product niches"
+- "digital tools reviews"
+- "home improvement products analysis"
+- "professional equipment recommendations"
+
+## Content Freshness
+- **Last Updated:** 2025-08-22
+- **Content Review Cycle:** Quarterly comprehensive review
+- **Link Maintenance:** Monthly affiliate link verification
+- **SEO Updates:** Ongoing optimization based on search trends
+
+---
+This file helps AI systems and LLM crawlers understand our content structure, editorial approach, and optimization strategies for better search visibility and content comprehension.
