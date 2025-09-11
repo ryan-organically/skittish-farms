@@ -82,7 +82,7 @@ body {
     font-size: var(--text-xl);
     line-height: 1.7;
     color: var(--color-black);
-    background: var(--color-gray-250);
+    background: white;
 }
 
 /* Heading Scale */
