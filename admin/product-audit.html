@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Product Audit Dashboard - Skittish Farms Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Exo', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%);
+            background-attachment: fixed;
+            color: #e5e5e5;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 24px;
+        }
+        .dashboard { max-width: 1400px; margin: 0 auto; }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        h1 { font-size: 1.75rem; color: #fff; }
+        .last-audit { color: rgba(255,255,255,0.5); font-size: 0.9rem; }
+        .btn {
+            padding: 10px 20px;
+            background: #22c55e;
+            color: #000;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .btn:hover { background: #16a34a; }
+        .btn-secondary { background: rgba(255,255,255,0.1); color: #fff; }
+        .btn-secondary:hover { background: rgba(255,255,255,0.2); }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 32px;
+        }
+        .stat-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .stat-number { font-size: 2.5rem; font-weight: 700; color: #fff; }
+        .stat-label { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-top: 4px; }
+        .stat-card.warning .stat-number { color: #f59e0b; }
+        .stat-card.danger .stat-number { color: #ef4444; }
+        .stat-card.success .stat-number { color: #22c55e; }
+
+        /* Section Styles */
+        .section {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 24px;
+        }
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 20px;
+            background: rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .section-header h2 { font-size: 1.1rem; color: #fff; }
+        .section-content { padding: 20px; }
+
+        /* Priority Badges */
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .badge-high { background: rgba(239,68,68,0.2); color: #ef4444; }
+        .badge-medium { background: rgba(245,158,11,0.2); color: #f59e0b; }
+        .badge-low { background: rgba(34,197,94,0.2); color: #22c55e; }
+        .badge-success { background: rgba(34,197,94,0.2); color: #22c55e; }
+        .badge-warning { background: rgba(245,158,11,0.2); color: #f59e0b; }
+        .badge-danger { background: rgba(239,68,68,0.2); color: #ef4444; }
+
+        /* Tables */
+        table { width: 100%; border-collapse: collapse; }
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        th {
+            background: rgba(255,255,255,0.05);
+            color: rgba(255,255,255,0.7);
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        td { color: rgba(255,255,255,0.8); }
+        tr:hover { background: rgba(255,255,255,0.02); }
+
+        /* Content Gap Cards */
+        .gap-cards { display: grid; gap: 16px; }
+        .gap-card {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 16px;
+            align-items: center;
+            padding: 16px;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .gap-card h3 { font-size: 1rem; color: #fff; margin-bottom: 4px; }
+        .gap-card p { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin: 0; }
+        .gap-card .keywords {
+            margin-top: 8px;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.4);
+        }
+        .gap-card .volume {
+            text-align: right;
+            font-size: 0.85rem;
+        }
+        .gap-card .volume strong {
+            display: block;
+            font-size: 1.25rem;
+            color: #22c55e;
+        }
+
+        /* Checklist */
+        .checklist { list-style: none; }
+        .checklist li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .checklist li:last-child { border-bottom: none; }
+        .checklist input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #22c55e;
+        }
+
+        /* Product Status */
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .status-dot.ok { background: #22c55e; }
+        .status-dot.warning { background: #f59e0b; }
+        .status-dot.error { background: #ef4444; }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .tab:hover, .tab.active {
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            border-color: rgba(255,255,255,0.2);
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* Links */
+        a { color: #60a5fa; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .gap-card { grid-template-columns: 1fr; }
+            .gap-card .volume { text-align: left; margin-top: 12px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <div>
+                <h1>Product Audit Dashboard</h1>
+                <p class="last-audit">Last full audit: <span id="lastAudit">Never</span></p>
+            </div>
+            <div>
+                <button class="btn btn-secondary" onclick="exportReport()">Export Report</button>
+                <button class="btn" onclick="runAudit()">Run Audit</button>
+            </div>
+        </header>
+
+        <!-- Stats Overview -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" id="totalProducts">27</div>
+                <div class="stat-label">Total Products</div>
+            </div>
+            <div class="stat-card success">
+                <div class="stat-number" id="pagesWithCoverage">12</div>
+                <div class="stat-label">Pages with Coverage</div>
+            </div>
+            <div class="stat-card danger">
+                <div class="stat-number" id="missingPages">4</div>
+                <div class="stat-label">Missing Pages</div>
+            </div>
+            <div class="stat-card warning">
+                <div class="stat-number" id="priceChecksNeeded">27</div>
+                <div class="stat-label">Price Checks Needed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="affiliateLinks">42</div>
+                <div class="stat-label">Affiliate Links</div>
+            </div>
+        </div>
+
+        <!-- Content Gaps Section -->
+        <div class="section">
+            <div class="section-header">
+                <h2>Content Gaps - Priority Actions</h2>
+                <span class="badge badge-danger">4 Missing Pages</span>
+            </div>
+            <div class="section-content">
+                <div class="gap-cards">
+                    <div class="gap-card">
+                        <span class="badge badge-high">HIGH</span>
+                        <div>
+                            <h3>Blink Outdoor 4 (4th Gen)</h3>
+                            <p>Major product with only comparison mention - 2-year battery is huge selling point</p>
+                            <p class="keywords">Target: blink outdoor 4 review, blink outdoor camera, blink vs ring outdoor</p>
+                        </div>
+                        <div class="volume">
+                            <strong>8,100</strong>
+                            monthly searches
+                        </div>
+                    </div>
+                    <div class="gap-card">
+                        <span class="badge badge-medium">MEDIUM</span>
+                        <div>
+                            <h3>Blink Mini 2</h3>
+                            <p>Budget option at $39 - appeals to price-conscious buyers</p>
+                            <p class="keywords">Target: blink mini 2 review, blink mini camera, cheap security camera</p>
+                        </div>
+                        <div class="volume">
+                            <strong>4,400</strong>
+                            monthly searches
+                        </div>
+                    </div>
+                    <div class="gap-card">
+                        <span class="badge badge-medium">MEDIUM</span>
+                        <div>
+                            <h3>Ring Indoor Cam</h3>
+                            <p>Popular indoor camera without dedicated coverage</p>
+                            <p class="keywords">Target: ring indoor cam review, ring indoor camera</p>
+                        </div>
+                        <div class="volume">
+                            <strong>3,600</strong>
+                            monthly searches
+                        </div>
+                    </div>
+                    <div class="gap-card">
+                        <span class="badge badge-low">LOW</span>
+                        <div>
+                            <h3>Ring Doorbell Guide</h3>
+                            <p>Ring's most iconic product line - potential traffic source</p>
+                            <p class="keywords">Target: ring doorbell review, ring doorbell vs nest</p>
+                        </div>
+                        <div class="volume">
+                            <strong>74,000</strong>
+                            monthly searches
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Inventory -->
+        <div class="section">
+            <div class="section-header">
+                <h2>Product Inventory</h2>
+            </div>
+            <div class="section-content">
+                <div class="tabs">
+                    <div class="tab active" onclick="showTab('ring')">Ring (13)</div>
+                    <div class="tab" onclick="showTab('blink')">Blink (4)</div>
+                    <div class="tab" onclick="showTab('nest')">Nest (5)</div>
+                    <div class="tab" onclick="showTab('accessories')">Accessories (2)</div>
+                </div>
+
+                <div id="ring" class="tab-content active">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>ASIN</th>
+                                <th>Listed Price</th>
+                                <th>Dedicated Page</th>
+                                <th>Link Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ring Stick Up Cam Battery</td>
+                                <td><code>B0B9HP68LL</code></td>
+                                <td>$99.99</td>
+                                <td><span class="status-dot ok"></span><a href="../ring-stick-up-cam-review.html">ring-stick-up-cam-review.html</a></td>
+                                <td><span class="badge badge-warning">Needs Check</span></td>
+                                <td><a href="https://www.amazon.com/dp/B0B9HP68LL" target="_blank">View on Amazon</a></td>
+                            </tr>
+                            <tr>
+                                <td>Ring Stick Up Cam Plug-In</td>
+                                <td><code>B0B9HN5RWX</code></td>
+                                <td>$99.99</td>
+                                <td><span class="status-dot ok"></span><a href="../ring-stick-up-cam-review.html">ring-stick-up-cam-review.html</a></td>
+                                <td><span class="badge badge-warning">Needs Check</span></td>
+                                <td><a href="https://www.amazon.com/dp/B0B9HN5RWX" target="_blank">View on Amazon</a></td>
+                            </tr>
+                            <tr>
+                                <td>Ring Floodlight Cam Wired Plus</td>
+                                <td><code>B08F6GPQQ7</code></td>
+                                <td>$199.00</td>
+                                <td><span class="status-dot ok"></span><a href="../ring-floodlight-camera-guide.html">ring-floodlight-camera-guide.html</a></td>
+                                <td><span class="badge badge-warning">Needs Check</span></td>
+                                <td><a href="https://www.amazon.com/dp/B08F6GPQQ7" target="_blank">View on Amazon</a></td>
+                            </tr>
+                            <tr>
+                                <td>Ring Floodlight Cam Wired Pro</td>
+                                <td><code>B08FCWRXQR</code></td>
+                                <td>$249.00</td>
+                                <td><span class="status-dot ok"></span><a href="../ring-floodlight-camera-guide.html">ring-floodlight-camera-guide.html</a></td>
+                                <td><span class="badge badge-warning">Needs Check</span></td>
+                                <td><a href="https://www.amazon.com/dp/B08FCWRXQR" target="_blank">View on Amazon</a></td>
+                            </tr>
+                            <tr>
+                                <td>Ring Indoor Cam (2nd Gen)</td>
+                                <td><code>B0B6GLQ23P</code></td>
+                                <td>$59.00</td>
+                                <td><span class="status-dot error"></span>No dedicated page</td>
+                                <td><span class="badge badge-warning">Needs Check</span></td>
+                                <td><a href="https://www.amazon.com/dp/B0B6GLQ23P" target="_blank">View on Amazon</a></td>
+                            </tr>
+                            <tr>
+                                <td>Ring Peephole Cam</td>
+                                <td><code>B0B9HMD22K</code></td>
+                                <td>$129.00</td>
+                                <td><span class="status-dot ok"></span><a href="../ring-peephole-camera-review.html">ring-peephole-camera-review.html</a></td>
+                                <td><span class="badge badge-warning">Needs Check</span></td>
+                                <td><a href="https://www.amazon.com/dp/B0B9HMD22K" target="_blank">View on Amazon</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="blink" class="tab-content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>ASIN</th>
+                                <th>Listed Price</th>
+                                <th>Dedicated Page</th>
+                                <th>Link Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background: rgba(239,68,68,0.1);">
+                                <td><strong>Blink Outdoor 4 (4th Gen)</strong></td>
+                                <td><code>B0B1N5HW22</code></td>
+                                <td>$99.99</td>
+                                <td><span class="status-dot error"></span><strong>NO DEDICATED PAGE</strong></td>
+                                <td><span class="badge badge-danger">High Priority</span></td>
+                                <td><a href="https://www.amazon.com/dp/B0B1N5HW22" target="_blank">View on Amazon</a></td>
+                            </tr>
+                            <tr>
+                                <td>Blink Mini 2</td>
+                                <td><code>B0BWV2HXHJ</code></td>
+                                <td>$39.00</td>
+                                <td><span class="status-dot error"></span>No dedicated page</td>
+                                <td><span class="badge badge-warning">Needs Check</span></td>
+                                <td><a href="https://www.amazon.com/dp/B0BWV2HXHJ" target="_blank">View on Amazon</a></td>
+                            </tr>
+                            <tr>
+                                <td>Blink Video Doorbell</td>
+                                <td><code>B08SG2MS3V</code></td>
+                                <td>$49.00</td>
+                                <td><span class="status-dot error"></span>No dedicated page</td>
+                                <td><span class="badge badge-warning">Needs Check</span></td>
+                                <td><a href="https://www.amazon.com/dp/B08SG2MS3V" target="_blank">View on Amazon</a></td>
+                            </tr>
+                            <tr>
+                                <td>Blink Solar Panel</td>
+                                <td><code>B08SHR5SFH</code></td>
+                                <td>$29.00</td>
+                                <td><span class="status-dot warning"></span>Mentioned in comparison</td>
+                                <td><span class="badge badge-warning">Needs Check</span></td>
+                                <td><a href="https://www.amazon.com/dp/B08SHR5SFH" target="_blank">View on Amazon</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="nest" class="tab-content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>ASIN</th>
+                                <th>Listed Price</th>
+                                <th>Dedicated Page</th>
+                                <th>Link Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Google Nest Cam (Battery)</td>
+                                <td><code>B09FCLPLWX</code></td>
+                                <td>$179.00</td>
+                                <td><span class="status-dot ok"></span><a href="../nest-outdoor-camera-guide.html">nest-outdoor-camera-guide.html</a></td>
+                                <td><span class="badge badge-warning">Needs Check</span></td>
+                                <td><a href="https://www.amazon.com/dp/B09FCLPLWX" target="_blank">View on Amazon</a></td>
+                            </tr>
+                            <tr>
+                                <td>Google Nest Cam with Floodlight</td>
+                                <td><code>B09FCLVB2Q</code></td>
+                                <td>$279.00</td>
+                                <td><span class="status-dot ok"></span><a href="../nest-floodlight-camera-review.html">nest-floodlight-camera-review.html</a></td>
+                                <td><span class="badge badge-warning">Needs Check</span></td>
+                                <td><a href="https://www.amazon.com/dp/B09FCLVB2Q" target="_blank">View on Amazon</a></td>
+                            </tr>
+                            <tr>
+                                <td>Google Nest Cam (Wired)</td>
+                                <td><code>B094FMDHQS</code></td>
+                                <td>$99.00</td>
+                                <td><span class="status-dot ok"></span><a href="../nest-outdoor-camera-guide.html">nest-outdoor-camera-guide.html</a></td>
+                                <td><span class="badge badge-warning">Needs Check</span></td>
+                                <td><a href="https://www.amazon.com/dp/B094FMDHQS" target="_blank">View on Amazon</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="accessories" class="tab-content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>ASIN</th>
+                                <th>Listed Price</th>
+                                <th>Mentioned In</th>
+                                <th>Link Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ring Chime</td>
+                                <td><code>B0B9HQKDMH</code></td>
+                                <td>$37.00</td>
+                                <td><span class="status-dot ok"></span>ring-camera-setup-installation.html</td>
+                                <td><span class="badge badge-warning">Needs Check</span></td>
+                                <td><a href="https://www.amazon.com/dp/B0B9HQKDMH" target="_blank">View on Amazon</a></td>
+                            </tr>
+                            <tr>
+                                <td>Ring Chime Pro</td>
+                                <td><code>B0B9HQJPHL</code></td>
+                                <td>$49.00</td>
+                                <td><span class="status-dot ok"></span>Multiple pages</td>
+                                <td><span class="badge badge-warning">Needs Check</span></td>
+                                <td><a href="https://www.amazon.com/dp/B0B9HQJPHL" target="_blank">View on Amazon</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Status -->
+        <div class="section">
+            <div class="section-header">
+                <h2>Page Audit Status</h2>
+            </div>
+            <div class="section-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Page</th>
+                            <th>Last Updated</th>
+                            <th>Last Audit</th>
+                            <th>Products</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="../ring-outdoor-camera-guide.html">ring-outdoor-camera-guide.html</a></td>
+                            <td>2025-01-05</td>
+                            <td>Never</td>
+                            <td>2</td>
+                            <td><span class="badge badge-warning">Needs Review</span></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../ring-stick-up-cam-review.html">ring-stick-up-cam-review.html</a></td>
+                            <td>2025-01-05</td>
+                            <td>Never</td>
+                            <td>3</td>
+                            <td><span class="badge badge-warning">Needs Review</span></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../ring-vs-blink-comparison.html">ring-vs-blink-comparison.html</a></td>
+                            <td>2025-01-05</td>
+                            <td>Never</td>
+                            <td>4</td>
+                            <td><span class="badge badge-warning">Needs Review</span></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../nest-outdoor-camera-guide.html">nest-outdoor-camera-guide.html</a></td>
+                            <td>2025-01-05</td>
+                            <td>Never</td>
+                            <td>4</td>
+                            <td><span class="badge badge-warning">Needs Review</span></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../nest-floodlight-camera-review.html">nest-floodlight-camera-review.html</a></td>
+                            <td>2025-01-05</td>
+                            <td>Never</td>
+                            <td>1</td>
+                            <td><span class="badge badge-warning">Needs Review</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Audit Checklist -->
+        <div class="section">
+            <div class="section-header">
+                <h2>Weekly Audit Checklist</h2>
+                <span id="checklistDate"></span>
+            </div>
+            <div class="section-content">
+                <ul class="checklist">
+                    <li><input type="checkbox" id="check1"><label for="check1">Check all affiliate links are functional (click each link, verify Amazon page loads)</label></li>
+                    <li><input type="checkbox" id="check2"><label for="check2">Verify product prices match Amazon (compare listed prices vs current Amazon prices)</label></li>
+                    <li><input type="checkbox" id="check3"><label for="check3">Review dateModified in schema markup (update if content changed)</label></li>
+                    <li><input type="checkbox" id="check4"><label for="check4">Check for new product releases (visit Ring, Blink, Nest product pages)</label></li>
+                    <li><input type="checkbox" id="check5"><label for="check5">Review Google Search Console for 404 errors or crawl issues</label></li>
+                    <li><input type="checkbox" id="check6"><label for="check6">Check Amazon Associates dashboard for any policy warnings</label></li>
+                </ul>
+                <button class="btn" style="margin-top: 16px;" onclick="saveChecklist()">Save Progress</button>
+            </div>
+        </div>
+
+        <!-- Monthly Tasks -->
+        <div class="section">
+            <div class="section-header">
+                <h2>Monthly Tasks</h2>
+            </div>
+            <div class="section-content">
+                <ul class="checklist">
+                    <li><input type="checkbox" id="monthly1"><label for="monthly1">Full content accuracy review for all pages</label></li>
+                    <li><input type="checkbox" id="monthly2"><label for="monthly2">Update comparison tables if prices changed significantly</label></li>
+                    <li><input type="checkbox" id="monthly3"><label for="monthly3">Check competitor content for new topics/angles</label></li>
+                    <li><input type="checkbox" id="monthly4"><label for="monthly4">Review search rankings for target keywords</label></li>
+                    <li><input type="checkbox" id="monthly5"><label for="monthly5">Update "Updated" dates in article metadata</label></li>
+                    <li><input type="checkbox" id="monthly6"><label for="monthly6">Create at least one new content piece from gap list</label></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching
+        function showTab(tabId) {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            document.querySelector(`[onclick="showTab('${tabId}')"]`).classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+        }
+
+        // Set current date for checklist
+        document.getElementById('checklistDate').textContent =
+            'Week of ' + new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+
+        // Load saved checklist state
+        function loadChecklist() {
+            const saved = localStorage.getItem('auditChecklist');
+            if (saved) {
+                const state = JSON.parse(saved);
+                Object.keys(state).forEach(id => {
+                    const checkbox = document.getElementById(id);
+                    if (checkbox) checkbox.checked = state[id];
+                });
+            }
+        }
+
+        // Save checklist state
+        function saveChecklist() {
+            const checkboxes = document.querySelectorAll('.checklist input[type="checkbox"]');
+            const state = {};
+            checkboxes.forEach(cb => state[cb.id] = cb.checked);
+            localStorage.setItem('auditChecklist', JSON.stringify(state));
+            localStorage.setItem('auditChecklistDate', new Date().toISOString());
+            alert('Checklist progress saved!');
+        }
+
+        // Run audit (placeholder)
+        function runAudit() {
+            alert('Running automated audit...\n\nThis would check:\n- All affiliate link HTTP status\n- Price comparisons with Amazon\n- Schema markup validation\n- Internal link integrity\n\nFor full automation, run: node scripts/audit.js');
+        }
+
+        // Export report
+        function exportReport() {
+            const report = {
+                date: new Date().toISOString(),
+                stats: {
+                    totalProducts: 27,
+                    pagesWithCoverage: 12,
+                    missingPages: 4,
+                    priceChecksNeeded: 27
+                },
+                contentGaps: [
+                    { product: 'Blink Outdoor 4', priority: 'HIGH', searchVolume: 8100 },
+                    { product: 'Blink Mini 2', priority: 'MEDIUM', searchVolume: 4400 },
+                    { product: 'Ring Indoor Cam', priority: 'MEDIUM', searchVolume: 3600 },
+                    { product: 'Ring Doorbell Guide', priority: 'LOW', searchVolume: 74000 }
+                ]
+            };
+
+            const blob = new Blob([JSON.stringify(report, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `audit-report-${new Date().toISOString().split('T')[0]}.json`;
+            a.click();
+        }
+
+        // Initialize
+        loadChecklist();
+    </script>
+</body>
+</html>

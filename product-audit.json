@@ -1,0 +1,533 @@
+{
+  "lastFullAudit": null,
+  "auditSchedule": "weekly",
+  "affiliateTag": "organicallysu-20",
+  "products": {
+    "ring": [
+      {
+        "id": "ring-stick-up-cam-battery",
+        "name": "Ring Stick Up Cam Battery",
+        "asin": "B0B9HP68LL",
+        "listedPrice": 99.99,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": "ring-stick-up-cam-review.html",
+        "mentionedIn": ["ring-outdoor-camera-guide.html", "ring-vs-blink-comparison.html"],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": ""
+      },
+      {
+        "id": "ring-stick-up-cam-plugin",
+        "name": "Ring Stick Up Cam Plug-In",
+        "asin": "B0B9HN5RWX",
+        "listedPrice": 99.99,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": "ring-stick-up-cam-review.html",
+        "mentionedIn": [],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": ""
+      },
+      {
+        "id": "ring-stick-up-cam-solar",
+        "name": "Ring Stick Up Cam Solar",
+        "asin": "B0B9HQJPHL",
+        "listedPrice": 149.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": "ring-solar-camera-setup.html",
+        "mentionedIn": [],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": ""
+      },
+      {
+        "id": "ring-floodlight-cam-wired-plus",
+        "name": "Ring Floodlight Cam Wired Plus",
+        "asin": "B08F6GPQQ7",
+        "listedPrice": 199.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": "ring-floodlight-camera-guide.html",
+        "mentionedIn": [],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": ""
+      },
+      {
+        "id": "ring-floodlight-cam-wired-pro",
+        "name": "Ring Floodlight Cam Wired Pro",
+        "asin": "B08FCWRXQR",
+        "listedPrice": 249.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": "ring-floodlight-camera-guide.html",
+        "mentionedIn": [],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": ""
+      },
+      {
+        "id": "ring-spotlight-cam-plus-battery",
+        "name": "Ring Spotlight Cam Plus Battery",
+        "asin": "B09DRX62ZV",
+        "listedPrice": 179.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": "ring-spotlight-cam-comparison.html",
+        "mentionedIn": [],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": ""
+      },
+      {
+        "id": "ring-spotlight-cam-plus-solar",
+        "name": "Ring Spotlight Cam Plus Solar",
+        "asin": "B09DRPMHL7",
+        "listedPrice": 229.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": "ring-spotlight-cam-comparison.html",
+        "mentionedIn": [],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": ""
+      },
+      {
+        "id": "ring-spotlight-cam-pro-battery",
+        "name": "Ring Spotlight Cam Pro Battery",
+        "asin": "B09DRT23F7",
+        "listedPrice": 229.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": "ring-spotlight-cam-comparison.html",
+        "mentionedIn": [],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": ""
+      },
+      {
+        "id": "ring-spotlight-cam-pro-solar",
+        "name": "Ring Spotlight Cam Pro Solar",
+        "asin": "B09DRTF52Y",
+        "listedPrice": 279.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": "ring-spotlight-cam-comparison.html",
+        "mentionedIn": [],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": ""
+      },
+      {
+        "id": "ring-peephole-cam",
+        "name": "Ring Peephole Cam",
+        "asin": "B0B9HMD22K",
+        "listedPrice": 129.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": "ring-peephole-camera-review.html",
+        "mentionedIn": [],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": ""
+      },
+      {
+        "id": "ring-indoor-cam-2nd-gen",
+        "name": "Ring Indoor Cam (2nd Gen)",
+        "asin": "B0B6GLQ23P",
+        "listedPrice": 59.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": null,
+        "mentionedIn": ["ring-outdoor-camera-guide.html", "ring-vs-blink-comparison.html"],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": ["No dedicated review page"],
+        "auditNotes": "Consider creating ring-indoor-cam-review.html"
+      },
+      {
+        "id": "ring-solar-panel",
+        "name": "Ring Solar Panel",
+        "asin": "B07YNQ4V2V",
+        "listedPrice": 49.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": "ring-solar-camera-setup.html",
+        "mentionedIn": [],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": ""
+      },
+      {
+        "id": "ring-battery-doorbell-plus",
+        "name": "Ring Battery Doorbell Plus",
+        "asin": "B09WZBPX7K",
+        "listedPrice": 149.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": null,
+        "mentionedIn": ["index.html"],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": ["No dedicated review page"],
+        "auditNotes": "High-value product - consider creating ring-doorbell-review.html"
+      }
+    ],
+    "blink": [
+      {
+        "id": "blink-outdoor-4",
+        "name": "Blink Outdoor 4 (4th Gen)",
+        "asin": "B0B1N5HW22",
+        "listedPrice": 99.99,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": null,
+        "mentionedIn": ["ring-vs-blink-comparison.html"],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": ["NO DEDICATED PAGE - HIGH PRIORITY"],
+        "auditNotes": "URGENT: Create blink-outdoor-4-review.html - 2-year battery life is major selling point"
+      },
+      {
+        "id": "blink-mini-2",
+        "name": "Blink Mini 2",
+        "asin": "B0BWV2HXHJ",
+        "listedPrice": 39.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": null,
+        "mentionedIn": ["ring-vs-blink-comparison.html"],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": ["No dedicated review page"],
+        "auditNotes": "Budget option - consider creating blink-mini-review.html"
+      },
+      {
+        "id": "blink-video-doorbell",
+        "name": "Blink Video Doorbell",
+        "asin": "B08SG2MS3V",
+        "listedPrice": 49.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": null,
+        "mentionedIn": ["ring-vs-blink-comparison.html"],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": ["No dedicated review page"],
+        "auditNotes": "Consider creating blink-doorbell-review.html"
+      },
+      {
+        "id": "blink-solar-panel",
+        "name": "Blink Solar Panel",
+        "asin": "B08SHR5SFH",
+        "listedPrice": 29.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": null,
+        "mentionedIn": ["ring-vs-blink-comparison.html"],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": "Accessory - can be included in Blink camera pages"
+      }
+    ],
+    "nest": [
+      {
+        "id": "nest-cam-battery",
+        "name": "Google Nest Cam (Battery)",
+        "asin": "B09FCLPLWX",
+        "listedPrice": 179.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": "nest-outdoor-camera-guide.html",
+        "mentionedIn": [],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": ""
+      },
+      {
+        "id": "nest-cam-floodlight",
+        "name": "Google Nest Cam with Floodlight",
+        "asin": "B09FCLVB2Q",
+        "listedPrice": 279.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": "nest-floodlight-camera-review.html",
+        "mentionedIn": [],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": ""
+      },
+      {
+        "id": "nest-cam-wired",
+        "name": "Google Nest Cam (Wired)",
+        "asin": "B094FMDHQS",
+        "listedPrice": 99.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": "nest-outdoor-camera-guide.html",
+        "mentionedIn": [],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": ""
+      },
+      {
+        "id": "nest-doorbell-battery",
+        "name": "Google Nest Doorbell (Battery)",
+        "asin": "B09FCLPLWX",
+        "listedPrice": 179.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": null,
+        "mentionedIn": ["nest-outdoor-camera-guide.html"],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": ["No dedicated doorbell page"],
+        "auditNotes": "Consider creating nest-doorbell-review.html"
+      },
+      {
+        "id": "nest-doorbell-wired",
+        "name": "Google Nest Doorbell (Wired)",
+        "asin": "B09FCLM5P3",
+        "listedPrice": 179.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": null,
+        "mentionedIn": ["nest-outdoor-camera-guide.html"],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": ""
+      }
+    ],
+    "accessories": [
+      {
+        "id": "ring-chime",
+        "name": "Ring Chime",
+        "asin": "B0B9HQKDMH",
+        "listedPrice": 37.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": null,
+        "mentionedIn": ["ring-camera-setup-installation.html"],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": "Accessory - no dedicated page needed"
+      },
+      {
+        "id": "ring-chime-pro",
+        "name": "Ring Chime Pro",
+        "asin": "B0B9HQJPHL",
+        "listedPrice": 49.00,
+        "lastPriceCheck": null,
+        "currentPrice": null,
+        "priceStatus": "needs_check",
+        "dedicatedPage": null,
+        "mentionedIn": ["ring-camera-setup-installation.html", "ring-camera-troubleshooting.html"],
+        "affiliateLinkStatus": "needs_check",
+        "lastContentUpdate": null,
+        "contentGaps": [],
+        "auditNotes": "Accessory - no dedicated page needed"
+      }
+    ]
+  },
+  "pages": {
+    "ring-outdoor-camera-guide.html": {
+      "lastUpdated": "2025-01-05",
+      "lastAudit": null,
+      "productsReferenced": ["ring-stick-up-cam-battery", "ring-indoor-cam-2nd-gen"],
+      "brokenLinks": [],
+      "outdatedPrices": [],
+      "auditStatus": "needs_review"
+    },
+    "ring-stick-up-cam-review.html": {
+      "lastUpdated": "2025-01-05",
+      "lastAudit": null,
+      "productsReferenced": ["ring-stick-up-cam-battery", "ring-stick-up-cam-plugin", "ring-stick-up-cam-solar"],
+      "brokenLinks": [],
+      "outdatedPrices": [],
+      "auditStatus": "needs_review"
+    },
+    "ring-floodlight-camera-guide.html": {
+      "lastUpdated": "2025-01-05",
+      "lastAudit": null,
+      "productsReferenced": ["ring-floodlight-cam-wired-plus", "ring-floodlight-cam-wired-pro"],
+      "brokenLinks": [],
+      "outdatedPrices": [],
+      "auditStatus": "needs_review"
+    },
+    "ring-spotlight-cam-comparison.html": {
+      "lastUpdated": "2025-01-05",
+      "lastAudit": null,
+      "productsReferenced": ["ring-spotlight-cam-plus-battery", "ring-spotlight-cam-plus-solar", "ring-spotlight-cam-pro-battery", "ring-spotlight-cam-pro-solar"],
+      "brokenLinks": [],
+      "outdatedPrices": [],
+      "auditStatus": "needs_review"
+    },
+    "ring-peephole-camera-review.html": {
+      "lastUpdated": "2025-01-05",
+      "lastAudit": null,
+      "productsReferenced": ["ring-peephole-cam"],
+      "brokenLinks": [],
+      "outdatedPrices": [],
+      "auditStatus": "needs_review"
+    },
+    "ring-solar-camera-setup.html": {
+      "lastUpdated": "2025-01-05",
+      "lastAudit": null,
+      "productsReferenced": ["ring-stick-up-cam-solar", "ring-solar-panel"],
+      "brokenLinks": [],
+      "outdatedPrices": [],
+      "auditStatus": "needs_review"
+    },
+    "ring-camera-setup-installation.html": {
+      "lastUpdated": "2025-01-05",
+      "lastAudit": null,
+      "productsReferenced": ["ring-chime", "ring-chime-pro"],
+      "brokenLinks": [],
+      "outdatedPrices": [],
+      "auditStatus": "needs_review"
+    },
+    "ring-camera-subscription-plans.html": {
+      "lastUpdated": "2025-01-05",
+      "lastAudit": null,
+      "productsReferenced": [],
+      "brokenLinks": [],
+      "outdatedPrices": [],
+      "auditStatus": "needs_review"
+    },
+    "ring-camera-troubleshooting.html": {
+      "lastUpdated": "2025-01-05",
+      "lastAudit": null,
+      "productsReferenced": ["ring-chime-pro"],
+      "brokenLinks": [],
+      "outdatedPrices": [],
+      "auditStatus": "needs_review"
+    },
+    "ring-vs-blink-comparison.html": {
+      "lastUpdated": "2025-01-05",
+      "lastAudit": null,
+      "productsReferenced": ["ring-stick-up-cam-battery", "ring-indoor-cam-2nd-gen", "blink-outdoor-4", "blink-mini-2"],
+      "brokenLinks": [],
+      "outdatedPrices": [],
+      "auditStatus": "needs_review"
+    },
+    "nest-outdoor-camera-guide.html": {
+      "lastUpdated": "2025-01-05",
+      "lastAudit": null,
+      "productsReferenced": ["nest-cam-battery", "nest-cam-wired", "nest-doorbell-battery", "nest-doorbell-wired"],
+      "brokenLinks": [],
+      "outdatedPrices": [],
+      "auditStatus": "needs_review"
+    },
+    "nest-floodlight-camera-review.html": {
+      "lastUpdated": "2025-01-05",
+      "lastAudit": null,
+      "productsReferenced": ["nest-cam-floodlight"],
+      "brokenLinks": [],
+      "outdatedPrices": [],
+      "auditStatus": "needs_review"
+    }
+  },
+  "contentGaps": [
+    {
+      "priority": "HIGH",
+      "type": "missing_page",
+      "product": "Blink Outdoor 4",
+      "suggestedFile": "blink-outdoor-4-review.html",
+      "reason": "Major product with only comparison mention - 2-year battery is huge selling point",
+      "targetKeywords": ["blink outdoor 4 review", "blink outdoor camera", "blink vs ring outdoor"],
+      "estimatedSearchVolume": 8100
+    },
+    {
+      "priority": "MEDIUM",
+      "type": "missing_page",
+      "product": "Blink Mini 2",
+      "suggestedFile": "blink-mini-review.html",
+      "reason": "Budget option at $39 - appeals to price-conscious buyers",
+      "targetKeywords": ["blink mini 2 review", "blink mini camera", "cheap security camera"],
+      "estimatedSearchVolume": 4400
+    },
+    {
+      "priority": "MEDIUM",
+      "type": "missing_page",
+      "product": "Ring Indoor Cam",
+      "suggestedFile": "ring-indoor-cam-review.html",
+      "reason": "Popular indoor camera without dedicated coverage",
+      "targetKeywords": ["ring indoor cam review", "ring indoor camera"],
+      "estimatedSearchVolume": 3600
+    },
+    {
+      "priority": "LOW",
+      "type": "missing_page",
+      "product": "Ring Doorbell",
+      "suggestedFile": "ring-doorbell-guide.html",
+      "reason": "Ring's most iconic product line - potential traffic source",
+      "targetKeywords": ["ring doorbell review", "ring doorbell vs nest"],
+      "estimatedSearchVolume": 74000
+    }
+  ],
+  "auditChecklist": {
+    "weekly": [
+      "Check all affiliate links are functional",
+      "Verify product prices match Amazon",
+      "Review dateModified in schema markup",
+      "Check for new product releases"
+    ],
+    "monthly": [
+      "Full content accuracy review",
+      "Update comparison tables if prices changed",
+      "Check competitor content for gaps",
+      "Review search rankings for target keywords",
+      "Update 'Updated' dates in articles"
+    ],
+    "quarterly": [
+      "Full site audit for broken links",
+      "Review and update all product specifications",
+      "Add new products to database",
+      "Create new content for high-priority gaps",
+      "Review and update schema markup"
+    ]
+  }
+}
