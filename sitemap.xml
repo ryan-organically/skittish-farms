@@ -1,94 +1,330 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-    
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
     <!-- Homepage -->
     <url>
         <loc>https://skittishfarms.com/</loc>
-        <lastmod>2025-08-22</lastmod>
+        <lastmod>2026-01-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-    
-    <!-- Categories Pages (to be added as content grows) -->
+
+    <!-- Ring Camera Guides -->
     <url>
-        <loc>https://skittishfarms.com/digital-products</loc>
-        <lastmod>2025-08-22</lastmod>
-        <changefreq>weekly</changefreq>
+        <loc>https://skittishfarms.com/ring-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/ring-outdoor-camera-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    
     <url>
-        <loc>https://skittishfarms.com/home-living</loc>
-        <lastmod>2025-08-22</lastmod>
-        <changefreq>weekly</changefreq>
+        <loc>https://skittishfarms.com/ring-indoor-camera-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    
     <url>
-        <loc>https://skittishfarms.com/tech-innovation</loc>
-        <lastmod>2025-08-22</lastmod>
-        <changefreq>weekly</changefreq>
+        <loc>https://skittishfarms.com/ring-doorbell-camera-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/ring-stick-up-cam-review.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    
     <url>
-        <loc>https://skittishfarms.com/professional-tools</loc>
-        <lastmod>2025-08-22</lastmod>
-        <changefreq>weekly</changefreq>
+        <loc>https://skittishfarms.com/ring-floodlight-camera-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    
-    <!-- Editorial/Blog Posts (placeholder structure for future content) -->
     <url>
-        <loc>https://skittishfarms.com/reviews/high-search-volume-product-analysis</loc>
-        <lastmod>2025-08-22</lastmod>
+        <loc>https://skittishfarms.com/ring-spotlight-cam-comparison.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/ring-peephole-camera-review.html</loc>
+        <lastmod>2026-01-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    
     <url>
-        <loc>https://skittishfarms.com/reviews/underrated-digital-solutions</loc>
-        <lastmod>2025-08-22</lastmod>
+        <loc>https://skittishfarms.com/ring-car-cam-review.html</loc>
+        <lastmod>2026-01-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    
     <url>
-        <loc>https://skittishfarms.com/reviews/physical-product-insights</loc>
-        <lastmod>2025-08-22</lastmod>
+        <loc>https://skittishfarms.com/ring-always-home-cam-review.html</loc>
+        <lastmod>2026-01-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    
-    <!-- About and Legal Pages -->
     <url>
-        <loc>https://skittishfarms.com/about</loc>
-        <lastmod>2025-08-22</lastmod>
+        <loc>https://skittishfarms.com/ring-solar-camera-setup.html</loc>
+        <lastmod>2026-01-10</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <priority>0.7</priority>
     </url>
-    
     <url>
-        <loc>https://skittishfarms.com/privacy-policy</loc>
-        <lastmod>2025-08-22</lastmod>
+        <loc>https://skittishfarms.com/best-ring-camera-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Ring How-To & Support -->
+    <url>
+        <loc>https://skittishfarms.com/ring-camera-setup-installation.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/ring-camera-installation-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/ring-camera-troubleshooting.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/ring-camera-wifi-troubleshooting.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/ring-camera-battery-life-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/how-to-reset-ring-nest-camera.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/ring-camera-subscription-plans.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/ring-camera-apartments-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Ring Retail & Deals -->
+    <url>
+        <loc>https://skittishfarms.com/ring-camera-deals-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/ring-camera-costco-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/ring-camera-walmart-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/ring-camera-best-buy-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/ring-camera-lowes-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Nest/Google Ecosystem -->
+    <url>
+        <loc>https://skittishfarms.com/google-home-security-ecosystem-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/nest-outdoor-camera-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/nest-indoor-camera-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/nest-cam-battery-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/nest-cam-wired-review.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/nest-floodlight-camera-review.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/nest-doorbell-battery-review.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/nest-doorbell-wired-review.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/nest-thermostat-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/nest-hub-smart-display-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/nest-protect-smoke-detector-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/nest-wifi-pro-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Blink Cameras -->
+    <url>
+        <loc>https://skittishfarms.com/blink-outdoor-4-review.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/blink-mini-2-review.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/blink-video-doorbell-review.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Comparisons -->
+    <url>
+        <loc>https://skittishfarms.com/ring-vs-blink-comparison.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- VPN Reviews -->
+    <url>
+        <loc>https://skittishfarms.com/best-vpn-home-security-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/nordvpn-home-security-review.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/expressvpn-home-security-review.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/surfshark-vpn-review.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Security Systems -->
+    <url>
+        <loc>https://skittishfarms.com/whole-home-security-system-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/nvr-security-system-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/poe-camera-system-guide.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/reolink-camera-system-review.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Legal -->
+    <url>
+        <loc>https://skittishfarms.com/disclosure.html</loc>
+        <lastmod>2026-01-10</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
-    
-    <url>
-        <loc>https://skittishfarms.com/terms-of-service</loc>
-        <lastmod>2025-08-22</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
-    
-    <url>
-        <loc>https://skittishfarms.com/affiliate-disclosure</loc>
-        <lastmod>2025-08-22</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
-    
+
 </urlset>
