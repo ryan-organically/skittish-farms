@@ -30,7 +30,7 @@
 
 | Product | ASIN | Approx. Price | Blog Post |
 |---------|------|---------------|-----------|
-| Ring Stick Up Cam Battery | B0B9HP68LL | $99 | ring-stick-up-cam-review.html |
+| Ring Stick Up Cam Battery | B0C5QRZ47P | $99 | ring-stick-up-cam-review.html |
 | Ring Stick Up Cam Plug-In | B0B9HN5RWX | $99 | ring-stick-up-cam-review.html |
 | Ring Stick Up Cam Solar | B0B9HQJPHL | $149 | ring-solar-camera-setup.html |
 | Ring Floodlight Cam Wired Plus | B08F6GPQQ7 | $199 | ring-floodlight-camera-guide.html |
@@ -86,7 +86,7 @@ https://www.amazon.com/dp/ASIN?tag=YOURID-20
 
 ### Example Implementation
 ```html
-<a href="https://www.amazon.com/dp/B0B9HP68LL?tag=skittishfarms-20"
+<a href="https://www.amazon.com/dp/B0C5QRZ47P?tag=skittishfarms-20"
    class="buy-button"
    target="_blank"
    rel="nofollow noopener">
@@ -417,7 +417,7 @@ Replace `YOURID` with your Associates ID:
 
 ```
 Ring Stick Up Cam Battery:
-https://www.amazon.com/dp/B0B9HP68LL?tag=YOURID-20
+https://www.amazon.com/dp/B0C5QRZ47P?tag=YOURID-20
 
 Ring Floodlight Cam Wired Pro:
 https://www.amazon.com/dp/B08FCWRXQR?tag=YOURID-20

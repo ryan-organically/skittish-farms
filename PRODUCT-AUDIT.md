@@ -155,7 +155,7 @@ https://www.amazon.com/dp/{ASIN}?tag=organicallysu-20
 ### Ring
 | Product | ASIN |
 |---------|------|
-| Ring Stick Up Cam Battery | B0B9HP68LL |
+| Ring Stick Up Cam Battery | B0C5QRZ47P |
 | Ring Stick Up Cam Plug-In | B0B9HN5RWX |
 | Ring Stick Up Cam Solar | B0B9HQJPHL |
 | Ring Floodlight Cam Wired Plus | B08F6GPQQ7 |
