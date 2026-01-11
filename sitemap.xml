@@ -319,6 +319,44 @@
         <priority>0.7</priority>
     </url>
 
+    <!-- Amazon Haul Budget Guides -->
+    <url>
+        <loc>https://skittishfarms.com/amazon-haul-security-cameras-under-10.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/amazon-haul-doorbell-accessories.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/amazon-haul-diy-security-bundle.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/amazon-haul-motion-sensors.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/amazon-haul-solar-security-lights.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://skittishfarms.com/amazon-haul-car-accessories.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
     <!-- Legal -->
     <url>
         <loc>https://skittishfarms.com/disclosure.html</loc>
