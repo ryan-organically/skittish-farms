@@ -162,8 +162,8 @@ https://www.amazon.com/dp/{ASIN}?tag=organicallysu-20
 | Ring Floodlight Cam Wired Pro | B08FCWRXQR |
 | Ring Spotlight Cam Plus Battery | B09DRX62ZV |
 | Ring Spotlight Cam Plus Solar | B09DRPMHL7 |
-| Ring Spotlight Cam Pro Battery | B09DRT23F7 |
-| Ring Spotlight Cam Pro Solar | B09DRTF52Y |
+| Ring Spotlight Cam Pro Battery | B09DRX62ZV |
+| Ring Spotlight Cam Pro Solar | B0B83HZVCF |
 | Ring Peephole Cam | B0B9HMD22K |
 | Ring Indoor Cam (2nd Gen) | B0B6GLQ23P |
 | Ring Solar Panel | B07YNQ4V2V |

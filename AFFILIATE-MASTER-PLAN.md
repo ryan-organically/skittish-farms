@@ -37,8 +37,8 @@
 | Ring Floodlight Cam Wired Pro | B08FCWRXQR | $249 | ring-floodlight-camera-guide.html |
 | Ring Spotlight Cam Plus Battery | B09DRX62ZV | $179 | ring-spotlight-cam-comparison.html |
 | Ring Spotlight Cam Plus Solar | B09DRPMHL7 | $229 | ring-spotlight-cam-comparison.html |
-| Ring Spotlight Cam Pro Battery | B09DRT23F7 | $229 | ring-spotlight-cam-comparison.html |
-| Ring Spotlight Cam Pro Solar | B09DRTF52Y | $279 | ring-spotlight-cam-comparison.html |
+| Ring Spotlight Cam Pro Battery | B09DRX62ZV | $229 | ring-spotlight-cam-comparison.html |
+| Ring Spotlight Cam Pro Solar | B0B83HZVCF | $279 | ring-spotlight-cam-comparison.html |
 | Ring Peephole Cam | B0B9HMD22K | $129 | ring-peephole-camera-review.html |
 | Ring Solar Panel | B07YNQ4V2V | $49 | ring-solar-camera-setup.html |
 | Ring Indoor Cam (2nd Gen) | B0B6GLQ23P | $59 | ring-outdoor-camera-guide.html |
@@ -423,7 +423,7 @@ Ring Floodlight Cam Wired Pro:
 https://www.amazon.com/dp/B08FCWRXQR?tag=YOURID-20
 
 Ring Spotlight Cam Pro:
-https://www.amazon.com/dp/B09DRT23F7?tag=YOURID-20
+https://www.amazon.com/dp/B09DRX62ZV?tag=YOURID-20
 
 Ring Peephole Cam:
 https://www.amazon.com/dp/B0B9HMD22K?tag=YOURID-20
