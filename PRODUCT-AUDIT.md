@@ -265,4 +265,20 @@ Open `admin/product-audit.html` in a browser to:
 
 ---
 
-*Last updated: January 2026*
+## Audit Log
+
+### 2026-07-03: Dead affiliate link remediation
+
+A full outbound link audit (source report: `~/dev/skittish-price-watch/audit/2026-07-03-link-audit.md`) found 89 Amazon product (dp) URLs returning 404 and 2 additional ASINs that were alive but recycled by Amazon into unrelated products (B0B6GLQMSW, B0CHMLJ3VW). All 91 URLs (90 unique ASINs, 172 occurrences across 38 pages, including 3 in JSON-LD schema offer URLs) were replaced with tagged Amazon search links in the form:
+
+```
+https://www.amazon.com/s?k=<product name>&tag=organicallysu-20
+```
+
+Search links cannot 404, so this stops affiliate rot from dead or recycled ASINs. The 28 dp URLs verified alive in the same audit were left as-is, along with the pre-existing search and haul links. Search terms were derived from this file's ASIN tables and each page's product headings (brand plus model, e.g. "Reolink RLK8-800B4 4K PoE camera system").
+
+Follow-up: when a product gets a fresh, verified ASIN, its search link can be upgraded back to a dp link per the Affiliate Link Format section above.
+
+---
+
+*Last updated: July 2026*
